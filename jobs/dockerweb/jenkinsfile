@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script{
                     sh ''' 
-                    docker build -t ${name_imagen}:${tag_imagen} jobs/dockerweb/ -f Dockerfile
+                    docker build devops/jobs/dockerweb/ -t ${name_imagen}:${tag_imagen}
                     '''
                     }
                     
